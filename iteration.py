@@ -1,9 +1,11 @@
-n = 7
-sequence = [0, 1]
+def fibonacci_iteration(length):
+    sequence = [0, 1]
 
-while n > 2:
-    length = len(sequence)
-    n = n - 1
-    sequence.append(sequence[length-1] + sequence[length-2])
+    while length > 2: # Length is -2 as the sequence already contains 1st two Fibonacci numbers
+        n = len(sequence)
+        length = length - 1
+        sequence.append(sequence[n-1] + sequence[n-2])
 
-print(sequence)
+    print(sequence)
+
+fibonacci_iteration(7)
