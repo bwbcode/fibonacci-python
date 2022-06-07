@@ -12,9 +12,9 @@ def fibonacci_iteration(length):
 
         print(sequence)
     else:
-        print('The minimum length of a sequence is 2:\n'+str(sequence))
+        print('The minimum length of a sequence is 2:','\n',sequence)
 
 try:
     fibonacci_iteration(int(sys.argv[1]))
 except:
-    print("The series length submitted is not an integer")
+    print('The series length submitted is not an integer')
